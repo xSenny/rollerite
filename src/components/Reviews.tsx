@@ -65,7 +65,7 @@ const Reviews = () => {
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 delay: 0.2 * i,
                 ease: [0.68, -0.55, 0.27, 1.55],
