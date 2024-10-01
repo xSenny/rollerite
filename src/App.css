@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+body {
+  @apply font-madini
+}
+
+.gradient {
+  background: linear-gradient(180deg, #FFF2DD 0%, #FFF2DD 20%);
+  filter: blur(200px);
+  @apply rounded-full
+}
