@@ -61,7 +61,7 @@ const Reviews = () => {
           {data[reviewIndex].review}
         </motion.p>
         <div className="flex justify-end gap-1">
-          {[0, 1, 2].map((i) => (
+          {[3, 2, 1].map((i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -100 }}
