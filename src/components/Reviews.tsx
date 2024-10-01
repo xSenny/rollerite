@@ -36,7 +36,7 @@ const data: {
 ];
 
 const Reviews = () => {
-  const [reviewIndex, setReviewIndex] = useState(0);
+  const [reviewIndex, setReviewIndex] = useState(1);
 
   return (
     <section className="flex justify-around flex-col lg:flex-row items-center mb-20 relative">
@@ -61,7 +61,7 @@ const Reviews = () => {
           {data[reviewIndex].review}
         </motion.p>
         <div className="flex justify-end gap-1">
-          {[3, 2, 1].map((i) => (
+          {[2, 1, 0].map((i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: -100 }}
