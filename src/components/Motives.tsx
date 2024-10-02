@@ -33,7 +33,7 @@ const Motives = () => {
       {data.map(({ title, image, description }, i) => (
         <motion.div
           initial={{
-            x: -100 * (i + 1),
+            x: -100,
             opacity: 0,
           }}
           whileInView={{
@@ -42,6 +42,7 @@ const Motives = () => {
           }}
           transition={{
             duration: 1,
+            delay: 0.3*i
           }}
           key={i}
           className="drop-shadow-xl w-[280px] h-[280px] bg-white rounded-[13px] flex flex-col justify-around items-center"

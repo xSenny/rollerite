@@ -39,8 +39,11 @@ const Reviews = () => {
   const [reviewIndex, setReviewIndex] = useState(1);
 
   return (
-    <section className="flex justify-around flex-col lg:flex-row items-center mb-20 relative">
-      <div className="absolute -z-[2] w-[1012px] right-0 top-0 h-[764px] transform translate-x-[324px] -translate-y-[100px] gradient blur-3xl" />
+    <section
+      className="relative mb-20 flex flex-col items-center justify-around gap-8 text-center lg:flex-row lg:text-start"
+      id="reviews"
+    >
+      <div className="gradient absolute right-0 top-0 -z-[2] h-[764px] w-[1012px] -translate-y-[100px] translate-x-[324px] transform blur-3xl" />
       <div className="space-y-4">
         <motion.p className="text-[48px]">
           Our{" "}
@@ -74,11 +77,11 @@ const Reviews = () => {
               onClick={() => {
                 setReviewIndex(i);
               }}
-              className={`size-6 rounded-full cursor-pointer ${i === reviewIndex ? "bg-red-500 shadow-lg" : "border-red-500 border-2"}`}
+              className={`size-6 cursor-pointer rounded-full ${i === reviewIndex ? "bg-red-500 shadow-lg" : "border-2 border-red-500"}`}
             ></motion.div>
           ))}
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-start">
           <div
             className={`size-10 rounded-full ${data[reviewIndex].reviewer.image}`}
           ></div>

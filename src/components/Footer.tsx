@@ -65,7 +65,7 @@ const data: {
 ];
 const Footer = () => {
   return (
-    <div className="h-60 bg-white w-full border-t-2 border-t-accent flex justify-evenly py-10 px-2">
+    <div className="min-h-60 bg-white w-full border-t-2 border-t-accent flex justify-evenly flex-col lg:flex-row items-center lg:items-start gap-8 py-10 px-2 text-center lg:text-start">
       {data.map((d) => (
         <div className="space-y-4">
           <p className="text-[32px] text-accent">{d.title}</p>
